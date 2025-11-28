@@ -152,37 +152,37 @@
             <h2 class="title mt-2">Get Your <span class="alt-color js-rotating">MVP, SaaS, Marketplace</span> Off the Ground</h2>
         </div>
         <!--Contact Form-->
-        <form class="contact-form" id="modal-contact-form-data" action="mailto:chirag@bidx.ai" method="post" enctype="text/plain">
+        <form class="contact-form" id="modal-contact-form-data">
             <div class="row">
                 <!--Result-->
                 <div class="col-12" id="quote_result"></div>
                 <!--Left Column-->
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input class="form-control" id="quote_name" name="Name" placeholder="Name" required=""
+                        <input class="form-control" id="quote_name" name="quoteName" placeholder="Name" required=""
                                type="text">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="quote_contact" name="Phone" placeholder="Contact #" required=""
+                        <input class="form-control" id="quote_contact" name="userPhone" placeholder="Contact #" required=""
                                type="text">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="quote_type" name="Project Type" placeholder="Bubble app type (MVP, SaaS, etc)" required=""
+                        <input class="form-control" id="quote_type" name="projectType" placeholder="Bubble app type (MVP, SaaS, etc)" required=""
                                type="text">
                     </div>
                 </div>
                 <!--Right Column-->
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input class="form-control" id="quote_email" name="Email" placeholder="Email" required=""
+                        <input class="form-control" id="quote_email" name="userEmail" placeholder="Email" required=""
                                type="email">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="quote_address" name="Location" placeholder="City / Country"
+                        <input class="form-control" id="quote_address" name="userAddress" placeholder="City / Country"
                                required="" type="text">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="quote_budget" name="Budget" placeholder="Budget" required=""
+                        <input class="form-control" id="quote_budget" name="quoteBudget" placeholder="Budget" required=""
                                type="text">
                     </div>
                 </div>
@@ -190,19 +190,19 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <textarea class="form-control" id="quote_message"
-                                  name="Message" placeholder="Describe your Bubble project, features and timeline goals."></textarea>
+                                  name="userMessage" placeholder="Describe your Bubble project, features and timeline goals."></textarea>
                     </div>
                 </div>
                 <!--Button-->
                 <div class="col-md-12">
                     <div class="form-check">
                         <label class="checkbox-lable">Contact by phone is preferred
-                            <input type="checkbox" name="contact_by_phone">
+                            <input type="checkbox">
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <button class="btn btn-large btn-rounded btn-blue btn-hvr-pink modal_contact_btn" type="submit" id="quote_submit_btn">
-                        <i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Send Request</b>
+                    <a class="btn btn-large btn-rounded btn-blue btn-hvr-pink modal_contact_btn" href="javascript:void(0);"
+                       id="quote_submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Send Request</b>
                         <div class="btn-hvr-setting">
                             <ul class="btn-hvr-setting-inner">
                                 <li class="btn-hvr-effect"></li>
@@ -211,7 +211,7 @@
                                 <li class="btn-hvr-effect"></li>
                             </ul>
                         </div>
-                    </button>
+                    </a>
                 </div>
             </div>
         </form>
@@ -307,11 +307,11 @@
                         </li>
                         <li>
                             <span class="address-icon gradient-text2"><i aria-hidden="true" class="fas fa-phone-volume"></i></span>
-                            <span class="address-text"><a class="mr-3" href="tel:900484436">900484436</a></span>
+                            <span class="address-text"><a class="mr-3" href="javascript:void(0)">900484436</a></span>
                         </li>
                         <li>
                             <span class="address-icon gradient-text2"><i aria-hidden="true" class="fas fa-paper-plane"></i></span>
-                            <span class="address-text"><a class="mr-3 alt-color" href="mailto:chirag@bidx.ai">chirag@bidx.ai</a></span>
+                            <span class="address-text"><a class="mr-3 alt-color" href="javascript:void(0)">chirag@bidx.ai</a></span>
                         </li>
                     </ul>
                 </div>
@@ -322,36 +322,36 @@
                     <h2 class="title mt-0">Get In Touch</h2>
                 </div>
                 <!--Contact Form-->
-                <form class="contact-form" id="contact-form-data" action="mailto:chirag@bidx.ai" method="post" enctype="text/plain">
+                <form class="contact-form" id="contact-form-data">
                     <div class="row">
                         <!--Result-->
                         <div class="col-12" id="result"></div>
                         <!--Left Column-->
                         <div class="col-md-5">
                             <div class="form-group">
-                                <input class="form-control" id="your_name" name="Name" placeholder="Name" required=""
+                                <input class="form-control" id="your_name" name="userName" placeholder="Name" required=""
                                        type="text">
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="your_email" name="Email" placeholder="Email" required=""
+                                <input class="form-control" id="your_email" name="userEmail" placeholder="Email" required=""
                                        type="email">
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="subject" name="Subject" placeholder="Your Bubble app idea" required=""
+                                <input class="form-control" id="subject" name="userSubject" placeholder="Your Bubble app idea" required=""
                                        type="text">
                             </div>
                         </div>
                         <!--Right Column-->
                         <div class="col-md-7">
                             <div class="form-group">
-                                <textarea class="form-control" id="message" name="Message"
+                                <textarea class="form-control" id="message" name="userMessage"
                                           placeholder="Describe your project, features, and timeline"></textarea>
                             </div>
                         </div>
                         <!--Button-->
                         <div class="col-md-12">
-                            <button class="btn btn-large btn-rounded btn-purple btn-hvr-blue d-block mt-4 contact_btn" type="submit" id="submit_btn">
-                                <i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Send Message</b>
+                            <a class="btn btn-large btn-rounded btn-purple btn-hvr-blue d-block mt-4 contact_btn" href="javascript:void(0);"
+                               id="submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Send Message</b>
                                 <div class="btn-hvr-setting">
                                     <ul class="btn-hvr-setting-inner">
                                         <li class="btn-hvr-effect"></li>
@@ -360,7 +360,7 @@
                                         <li class="btn-hvr-effect"></li>
                                     </ul>
                                 </div>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </form>
